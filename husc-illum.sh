@@ -26,6 +26,6 @@
 
 # Run the job from the directory where it was launched (default):
 # The job command(s):
-~/anaconda/bin/conda activate husc
+source activate husc
 husc illum -v
 
