@@ -27,5 +27,5 @@
 # Run the job from the directory where it was launched (default):
 # The job command(s):
 source activate husc
-husc illum -v
+husc illum $@
 
