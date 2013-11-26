@@ -6,7 +6,7 @@
 #SBATCH -p main
 
 # The name of the job:
-#SBATCH --job-name="crop"
+#SBATCH --job-name="stitch"
 
 # Maximum number of CPU cores used by the job:
 #SBATCH --ntasks=1
@@ -26,5 +26,5 @@
 # Run the job from the directory where it was launched (default):
 # The job command(s):
 export PATH=${HOME}/anaconda/envs/husc/bin:$PATH
-husc crop $@
+husc stitch $@
 

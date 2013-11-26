@@ -26,6 +26,6 @@
 
 # Run the job from the directory where it was launched (default):
 # The job command(s):
-source activate husc
+export PATH=${HOME}/anaconda/envs/husc/bin:$PATH
 husc illum $@
 

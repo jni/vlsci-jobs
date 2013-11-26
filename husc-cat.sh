@@ -6,13 +6,13 @@
 #SBATCH -p main
 
 # The name of the job:
-#SBATCH --job-name="crop"
+#SBATCH --job-name="cat"
 
 # Maximum number of CPU cores used by the job:
 #SBATCH --ntasks=1
 
 # The amount of memory in megabytes per process in the job:
-#SBATCH --mem-per-cpu=1024
+#SBATCH --mem-per-cpu=16384
 
 # Send yourself an email when the job:
 # aborts abnormally (fails)
@@ -26,5 +26,5 @@
 # Run the job from the directory where it was launched (default):
 # The job command(s):
 export PATH=${HOME}/anaconda/envs/husc/bin:$PATH
-husc crop $@
+husc cat $@
 
