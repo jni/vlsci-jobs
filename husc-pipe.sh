@@ -6,7 +6,7 @@
 #SBATCH -p main
 
 # The name of the job:
-#SBATCH --job-name="features"
+#SBATCH --job-name="husc-pipe"
 
 # Maximum number of CPU cores used by the job:
 #SBATCH --ntasks=1
