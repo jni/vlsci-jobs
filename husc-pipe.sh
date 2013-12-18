@@ -44,5 +44,6 @@ for ch in w1 w2 w3; do
     husc stitch $TMPDIR/M*${ch}*.crop.illum.tif
 done
 husc cat $TMPDIR/M*stitched.tif
+cp $TMPDIR/M*stitched.chs.tif $d &
 husc features $TMPDIR/M*stitched.chs.tif $d/features.h5
 
