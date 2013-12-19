@@ -30,7 +30,9 @@
 # The job command(s):
 
 # save slurm job
-cp /var/spool/slurm/job${SLURM_JOB_ID}/slurm_script $HOME/slurm-jobs/$SLURM_JOB_NAME.$SLURM_JOB_ID.in
+save_file=$HOME/slurm-jobs/$SLURM_JOB_NAME.$SLURM_JOB_ID.in
+cp /var/spool/slurm/job${SLURM_JOB_ID}/slurm_script $save_file
+echo \#command: $@ >> $save_file
 
 export PATH=${HOME}/anaconda/envs/husc/bin:$PATH
 d=$1
