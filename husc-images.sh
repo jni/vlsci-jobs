@@ -28,6 +28,10 @@
 
 # Run the job from the directory where it was launched (default):
 # The job command(s):
+
+# save slurm job
+cp /var/spool/slurm/job${SLURM_JOB_ID}/slurm_script $HOME/slurm-jobs/$SLURM_JOB_NAME.$SLURM_JOB_ID.in
+
 export PATH=${HOME}/anaconda/envs/husc/bin:$PATH
 d=$1
 husc crop -O $TMPDIR 100 none 250 none $d/*_s1_w*.TIF
