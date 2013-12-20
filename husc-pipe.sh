@@ -32,7 +32,7 @@
 # save slurm job
 save_file=$HOME/slurm-jobs/$SLURM_JOB_NAME.$SLURM_JOB_ID.in
 cp /var/spool/slurm/job${SLURM_JOB_ID}/slurm_script $save_file
-echo \#command: $@ >> $save_file
+echo input directory: $1
 
 export PATH=${HOME}/anaconda/envs/husc/bin:$PATH
 d=$1
