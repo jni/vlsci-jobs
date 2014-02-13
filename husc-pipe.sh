@@ -52,4 +52,6 @@ done
 husc cat $TMPDIR/M*stitched.tif
 cp $TMPDIR/M*stitched.chs.tif $d &
 husc features $TMPDIR/M*stitched.chs.tif $d/features.h5
+ls $d/M*stitched.chs.tif > $d/filenames.txt
+
 
