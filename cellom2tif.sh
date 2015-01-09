@@ -31,4 +31,4 @@ fi
 # The job command(s):
 echo input directory: $1
 base=`basename $1`
-${HOME}/anaconda/bin/python ${HOME}/projects/cellom2tif/cellom2tif.py -m -E ${base}.errors.txt "$1" "tiff/${base}"
+${HOME}/anaconda/envs/cellom2tif/bin/cellom2tif -m -E ${base}.errors.txt "$1" "tiff/${base}"
